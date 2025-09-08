@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;    
+}
+
+.box{
+    background-color: rgb(196, 15, 15);
+    width: 700px;
+    height: 300px; /* fixed height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* keeps button at bottom */
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(16px, 3vw, 32px); /* adjusts automatically */
+    margin: 0;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    text-align: center;
+    line-height: 1.2;
+    flex-grow: 1; /* allows quote to use available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    width: 180px; /* fixed width */
+    height: 55px; /* fixed height */
+    font-size: 18px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
