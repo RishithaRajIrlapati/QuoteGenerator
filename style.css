@@ -49,8 +49,8 @@ button {
     background-color: black;
     color: white;
     border-radius: 25px;
-    width: 180px; /* fixed width */
-    height: 55px; /* fixed height */
+    width: 180px;
+    height: 55px; 
     font-size: 18px;
     border: 2px solid white;
     display: flex;
